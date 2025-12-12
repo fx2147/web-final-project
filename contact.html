@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact &amp; Resources – Francie Xia</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Contact form and study resources for tutoring, dance, and project support.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body id="top">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="logo-area">
+      <h1 class="site-title">Francie Xia</h1>
+      <p class="tagline">Tutor • Dance Teacher • Former Volunteer Founder</p>
+    </div>
+
+    <nav class="main-nav" aria-label="Primary navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About &amp; Services</a></li>
+        <li><a href="contact.html" aria-current="page">Contact &amp; Resources</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="page-intro">
+      <h2>Contact &amp; Resources</h2>
+      <p>Reach out if you’re interested in tutoring, dance, or general study support.</p>
+      <button id="focus-mode-button" class="button button-secondary">Toggle focus mode</button>
+    </section>
+
+    <section class="contact-layout">
+      <section class="contact-form-section">
+        <h3>Contact Form</h3>
+        <form action="https://formspree.io/f/mgvgnqvz" method="POST">
+          <label for="name">Name</label>
+          <input id="name" type="text" name="name" required>
+
+          <label for="email">Email</label>
+          <input id="email" type="email" name="_replyto" required>
+
+          <label for="interest">I’m interested in</label>
+          <select id="interest" name="interest">
+            <option value="tutoring">Tutoring</option>
+            <option value="dance">Dance Lessons</option>
+            <option value="study-skills">Study Skills</option>
+            <option value="other">Other</option>
+          </select>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <input type="hidden" name="source" value="Francie Xia portfolio site">
+
+          <button class="button" type="submit">Send</button>
+        </form>
+      </section>
+
+      <section class="resources-section">
+        <h3>Study &amp; Community Resources</h3>
+
+        <figure class="desk-image">
+          <img 
+            src="images/study1.jpg"
+            srcset="images/study1.jpg 1x, images/study1-2x.jpg 2x"
+            width="400"
+            height="267"
+            alt="Students sitting together in a studio space, listening to a session.">
+          <figcaption>Workshops, rehearsals, and shared learning spaces are a big part of my life.</figcaption>
+        </figure>
+
+        <ul class="resource-list">
+          <li>Use 25-minute focus blocks with 5-minute breaks.</li>
+          <li>Write short reflections after practice or rehearsal to track your growth.</li>
+          <li>Teach someone else what you learned to test your understanding.</li>
+        </ul>
+      </section>
+    </section>
+
+    <a href="#top" class="back-to-top-link">Back to top</a>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span class="footer-year"></span> Francie Xia. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
